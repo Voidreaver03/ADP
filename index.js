@@ -24,6 +24,26 @@ console.log("Error");
 });
 });
 
+app.post("/deleteAccount", (req, res) => {
+    var user = req.body.user;
+    var pw = req.body.pw;
+    fs.readFile("user.json", "utf8", (err, jsonString) => {
+    
+        if(err) {
+    console.log("Error");
+    }
+
+    var a=JSON.parse(jsonString);
+    if(a["user"]==user && a["pw"]==pw) {
+    fs.writeFileSync("user.json", "  ");
+    res.send("account eliminated");
+    
+    }else{
+    res.send("Error");
+    }
+    });
+    });
 app.listen(port, host, () => {
     console.log("server running at http://%s:%d", host, port);
     });
+
