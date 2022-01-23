@@ -1,0 +1,23 @@
+{
+  "name": "adp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Voidreaver03/ADP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Voidreaver03/ADP/issues"
+  },
+  "homepage": "https://github.com/Voidreaver03/ADP#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security"
+  }
+}
