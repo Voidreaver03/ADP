@@ -15,7 +15,6 @@ if(err) {
 console.log("Error");
 }
 
-
     var a=JSON.parse(jsonString);
     if(a["user"]==user && a["pw"]==pw) {
     res.send("Login");
